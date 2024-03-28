@@ -1,0 +1,101 @@
+/*barra de navegacion*/
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    display: flex;
+    min-height: 110px;
+    background-color: green;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height:  100px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: aliceblue;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+/*formulario*/
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    height: 80vh;
+  }
+  
+  form input {
+    width: 70%;
+    height: 30px;
+    margin: 10px;
+  }
+
+  
+/*pie de página*/
+
+.pie-pagina{
+    width: 100%;
+}
+
+.pie-pagina .grupo-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+figure{
+    cursor: pointer;
+    
+}
+.img-foot{
+    width: 60px; 
+ }
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

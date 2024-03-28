@@ -1,0 +1,130 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    display: flex;
+    min-height: 110px;
+    background-color: green;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+   
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height:  100px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: aliceblue;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/*formulario*/
+h4{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+section{
+   display: flex;
+   justify-content: center;
+}
+
+form{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30vh;
+    padding: 35px;
+    
+}
+input[type=file]::file-selector-button {
+    border: 2px solid #17770f;
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: #17770f;
+    transition: 1s;
+  }
+  
+  
+
+  input[type=file]::file-selector-button:hover {
+    background-color: #85ec81;
+    border: 2px solid #00ce11;
+    
+  }
+
+#enviar{
+    margin-left: 75vh;
+    display: grid;
+    text-align: center; 
+    width: 50vh;
+}
+
+
+form input {
+    width: 70%;
+    height: 36px;
+    margin: 10px;
+  }
+
+  
+/*pie de página*/
+
+.pie-pagina{
+    width: 100%;
+}
+
+.pie-pagina .grupo-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 10px 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+figure{
+    cursor: pointer;
+    
+}
+.img-foot{
+    width: 60px; 
+ }
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
